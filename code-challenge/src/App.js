@@ -5,7 +5,7 @@ import TaskContainer from './components/TaskContainer';
 
 function App() {
   return (
-    <div className="App">
+    <div >
      <TaskContainer />
     </div>
   );
