@@ -9,7 +9,7 @@ const EditTask = ({editTask, task}) => {
 
         editTask(value, task.id);
 
-        setValue("");
+        
     };
 
     return (
