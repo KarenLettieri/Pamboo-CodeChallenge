@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Pamboo-CodeChallenge/static/css/main.adf3f31c.css",
+    "main.js": "/Pamboo-CodeChallenge/static/js/main.5a88f44a.js",
+    "static/media/panda.jpg": "/Pamboo-CodeChallenge/static/media/panda.4bf59a69b76b1fa3f25b.jpg",
+    "index.html": "/Pamboo-CodeChallenge/index.html",
+    "main.adf3f31c.css.map": "/Pamboo-CodeChallenge/static/css/main.adf3f31c.css.map",
+    "main.5a88f44a.js.map": "/Pamboo-CodeChallenge/static/js/main.5a88f44a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adf3f31c.css",
+    "static/js/main.5a88f44a.js"
+  ]
+}
