@@ -10,7 +10,7 @@ const EditTask = ({ editTask, task }) => {
 
   return (
     <form className="mb-4 px-6 pt-4 pb-2" onSubmit={handleSubmit}>
-      <div className="w-1/4 todo bg-teal-300 border-teal-300 hover:border-teal-400 rounded-full px-2 py-1 text-xl font-semibold text-gray-500 m-auto my-1">
+      <div className="w-1/2 todo bg-teal-300 border-teal-300 hover:border-teal-400 rounded-full px-2 py-1 text-xl font-semibold text-gray-500 m-auto my-1">
         <input
           maxLength="80"
           type="text"
