@@ -16,8 +16,7 @@ const TaskForm = ({ addTask }) => {
     >
       <div className="flex items-center border-b border-teal-500 py-2">
         <input
-          maxLength="35"
-          required
+          maxLength="80"
           type="text"
           onChange={(e) => setValue(e.target.value)}
           value={value}

@@ -4,10 +4,7 @@ import Tasks from "./Tasks";
 import { v4 as uuidv4 } from "uuid";
 import EditTask from "./EditTask";
 import Navbar from "./Navbar";
-import Swal from 'sweetalert2';
-
-
-
+import Swal from "sweetalert2";
 
 uuidv4();
 
@@ -15,29 +12,26 @@ const TaskContainer = () => {
   const [tasks, setTasks] = useState([]);
 
   const addTask = (todo) => {
-    if(todo !== ""){
+    if (todo !== "") {
       setTasks([
         ...tasks,
         { id: uuidv4(), task: todo, completed: false, isEditing: false },
       ]);
-    }
-    else {
+    } else {
       Swal.fire({
-        title: 'Oops!',
-        text: 'No es posible ingresar una tarea vacía',
-        icon: 'error',
-        confirmButtonText: 'Confirmar',
+        title: "Oops!",
+        text: "No es posible ingresar una tarea vacía",
+        icon: "error",
+        confirmButtonText: "Confirmar",
         timer: 5000,
         timerProgressBar: true,
         customClass: {
-          actions: "bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-2xl border-4 text-white font-semibold rounded"
+          actions:
+            "bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-2xl border-4 text-white font-semibold rounded",
         },
         buttonsStyling: false,
-
-        
-      })
+      });
     }
-    
   };
 
   const toggleComplete = (id) => {
@@ -61,7 +55,7 @@ const TaskContainer = () => {
   };
 
   const editTodo = (todo, id) => {
-    if(todo !== "") {
+    if (todo !== "") {
       setTasks(
         tasks.map((task) =>
           task.id === id
@@ -69,30 +63,26 @@ const TaskContainer = () => {
             : task
         )
       );
-    }
-    else {
+    } else {
       setTasks(
         tasks.map((task) =>
-          task.id === id
-            ? { ...task, todo, isEditing: !task.isEditing}
-            : task
+          task.id === id ? { ...task, todo, isEditing: !task.isEditing } : task
         )
       );
       Swal.fire({
-        title: 'Oopsi!',
-        text: 'No es posible dejar una tarea vacía',
-        icon: 'warning',
-        confirmButtonText: 'Confirmar',
+        title: "Oopsi!",
+        text: "No es posible dejar una tarea vacía",
+        icon: "warning",
+        confirmButtonText: "Confirmar",
         timer: 5000,
         timerProgressBar: true,
         customClass: {
-          actions: "bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-2xl border-4 text-white font-semibold rounded"
+          actions:
+            "bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-2xl border-4 text-white font-semibold rounded",
         },
-        buttonsStyling: false
-      })
+        buttonsStyling: false,
+      });
     }
-    
-    
   };
 
   return (

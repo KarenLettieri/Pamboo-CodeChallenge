@@ -4,8 +4,8 @@ import { faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Tasks = ({ task, toggleComplete, deleteTask, editTask }) => {
   return (
-    <div className="mb-4 px-6 pt-4 pb-2">
-      <div className="w-1/4 todo bg-teal-500 hover:bg-teal-400 border-teal-500 hover:border-teal-700 rounded-full px-2 py-1 text-xl font-semibold text-gray-100 mx-auto my-1">
+    <div className="my-6 px-6">
+      <div className="w-1/2 todo bg-teal-500 hover:bg-teal-400 border-teal-500 hover:border-teal-700 rounded-full px-2 py-1 text-xl font-semibold text-gray-100 mx-auto my-1">
         <p
           className={`${task.completed ? "completed" : ""}`}
           onClick={() => toggleComplete(task.id)}

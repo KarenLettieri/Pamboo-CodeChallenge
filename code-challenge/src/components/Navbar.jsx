@@ -46,7 +46,7 @@ const Navbar = () => {
       >
         Lista de {" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          tareas {" "}
+          tareas{" "}
         </span>
       </h2>
     </div>
